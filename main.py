@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-chromecast_name = "Home group" #edit me to be your google home group
+chromecast_name = "Bedroom Speaker" 
 
 app = Flask(__name__)
 logging.info("Starting up chromecasts")
@@ -65,4 +65,4 @@ def say():
     return text
 
 if __name__ == '__main__':
-        app.run(debug=True,host='0.0.0.0')
+        app.run(debug=True,host='10.0.0.8',port='8181')

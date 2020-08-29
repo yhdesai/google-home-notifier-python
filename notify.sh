@@ -21,7 +21,7 @@ _build() {
 
 # Run (first time)
 _run() {
-  docker run -d --name $CONTAINER_NAME --net=host $IMAGE_NAME
+  docker run -d --name $CONTAINER_NAME -p 5000:5000 --net=host $IMAGE_NAME
 }
 
 # Debugging mode with terminal access
